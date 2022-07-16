@@ -2,7 +2,7 @@ import logoSvg from '../../svg/logo.svg'
 
 function Header() {
 
-    const descLogo = 'Essa é a logo do blog'
+    const descLogo = 'Essa é a logo do blog';
 
 
     return (
