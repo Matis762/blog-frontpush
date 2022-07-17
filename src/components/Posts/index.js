@@ -1,15 +1,16 @@
-const Posts = () => {
+import { unstable_renderSubtreeIntoContainer } from "react-dom";
+
+const Posts = ({subtitle,title,children}) => {
+
+    
     return (
         <div className='post mx-2'>
             <div className="img-post"></div>
-            <h5>Tecnologia</h5>
-            <h3>O guia definitivo do Blog</h3>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem vitae aliquid itaque quam
-                laborum assumenda eos tenetur officia et. Nisi in id vitae odit ab iusto molestiae odio,
-                aliquid omnis.
+            <h5>{subtitle}</h5>
+            <h3>{title}</h3>
+            <p className ='mt-1'>
+              {children}  
             </p>
-
             <div className="flex pt-2">
 
                 <div className="img-profile" />
